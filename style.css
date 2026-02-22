@@ -476,7 +476,7 @@ html[lang="en"] .review-text{
 }
 
 .glass{
-  margin-top:40px;
+  margin-top:80px;
   position:relative;
   z-index:2;
   width:min(980px, 100%);
@@ -745,7 +745,7 @@ html[lang="en"] .review-text{
 }
 
 .hero-logo img {
-  height: 160px;           /* desktop size - increased */
+  height: 220px;           /* desktop size - increased */
   width: auto;
   display: block;
 }
@@ -759,7 +759,7 @@ html[lang="en"] .review-text{
   }
 
   .hero-logo img {
-    height: 100px;
+    height: 140px;
   }
 }
 
@@ -815,5 +815,5 @@ img, svg, picture {
 /* ensure touch targets are large enough on very small screens */
 @media (max-width: 380px){
   .landing-btn{ padding:11px 14px; font-size:15px; }
-  .hero-logo img{ height:110px; }
+  .hero-logo img{ height:140px; }
 }
