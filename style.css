@@ -476,7 +476,7 @@ html[lang="en"] .review-text{
 }
 
 .glass{
-  margin-top:-30px;
+  margin-top:40px;
   position:relative;
   z-index:2;
   width:min(980px, 100%);
@@ -759,6 +759,61 @@ html[lang="en"] .review-text{
   }
 
   .hero-logo img {
-    height: 140px;
+    height: 100px;
   }
+}
+
+/* Mobile logo spacing & compact phone number */
+@media (max-width: 768px) {
+  .landing-hero{
+    padding-top: 250px; /* reserve more space for the centered logo */
+  }
+
+  .landing-phone{
+    font-size:15px; /* slightly smaller so numbers fit on one line */
+    white-space:nowrap;
+    display:inline-block;
+  }
+}
+
+@media (max-width: 380px){
+  .landing-hero{ padding-top:250px; }
+  .landing-phone{ font-size:14px; }
+}
+
+/* =========================
+   Mobile responsive improvements
+   - fluid type and images
+   - stacked actions and full-width buttons on small screens
+ ======================== */
+
+html{
+  font-size: clamp(14px, 1.8vw, 18px);
+}
+
+img, svg, picture {
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+/* make landing hero padding and glass more fluid */
+.landing-hero{
+  padding: clamp(28px, 8vh, 90px) 18px 40px;
+  background-position: center top 35%;
+}
+
+.glass{ width: min(980px, 100%); padding: clamp(18px, 3.5vw, 28px); }
+
+/* stack landing actions into full-width buttons on narrow screens */
+@media (max-width: 520px){
+  .landing-actions{ display:flex; flex-direction:column; gap:12px; align-items:center; }
+  .landing-btn{ min-width:unset; width:100%; padding:12px 16px; box-shadow:none; }
+  .landing-title{ font-size:clamp(26px, 8vw, 40px); }
+}
+
+/* ensure touch targets are large enough on very small screens */
+@media (max-width: 380px){
+  .landing-btn{ padding:11px 14px; font-size:15px; }
+  .hero-logo img{ height:110px; }
 }
