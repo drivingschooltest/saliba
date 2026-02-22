@@ -455,7 +455,7 @@ html[lang="en"] .review-text{
 .landing-phone::before{ content:" ☎ "; opacity:.85; }
 
 .landing-location{
-  font-size: 18px;
+  font-size: 16px;
   display:flex;
   justify-content:center;
   margin-top:6px;
