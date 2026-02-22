@@ -196,8 +196,8 @@ function showResults() {
   document.getElementById("quizView").classList.add("hidden");
   document.getElementById("resultsView").classList.remove("hidden");
 
-  const phone = localStorage.getItem("quiz_phone") || "03379957";
-  document.getElementById("resultUser").textContent = `مدرسة ابو فرج لتعليم قيادة السيارات — ${phone}`;
+  const phone = localStorage.getItem("quiz_phone") || "03294492 - 03647444 - 79312312";
+  document.getElementById("resultUser").textContent = `Auto Ecole Saliba — ${phone}`;
 
   const passed = quiz.score >= 24;
 
@@ -276,9 +276,9 @@ function startNewExam() {
 }
 
 async function init() {
-  const phone = localStorage.getItem("quiz_phone") || "03379957";
+  const phone = localStorage.getItem("quiz_phone") || "03294492 - 03647444 - 79312312";
 
-  document.getElementById("userName").textContent = "مدرسة ابو فرج لتعليم قيادة السيارات";
+  document.getElementById("userName").textContent = "Auto Ecole Saliba";
   document.getElementById("userPhone").textContent = phone;
 
   QUESTIONS = await loadQuestions();

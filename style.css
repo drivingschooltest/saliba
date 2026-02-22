@@ -398,7 +398,7 @@ html[lang="en"] .review-text{
 .landing-hero{
   min-height:100vh;
   position:relative;
-  background-image:url("assets/tem.jpeg");
+  background-image:url("assets/sa.jpeg");
   background-size:cover;
   background-repeat:no-repeat;
   background-position: center top 40%;
@@ -730,4 +730,35 @@ html[lang="en"] .review-text{
 
   .title.small{ font-size:20px; }
   .question{ font-size:16px; }
+}
+
+/* =========================
+   HERO LOGO (top center)
+========================= */
+.hero-logo {
+  position: absolute;
+  top: 24px;              /* distance from top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;            /* above overlay */
+  pointer-events: auto;
+}
+
+.hero-logo img {
+  height: 160px;           /* desktop size - increased */
+  width: auto;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-logo {
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero-logo img {
+    height: 140px;
+  }
 }
